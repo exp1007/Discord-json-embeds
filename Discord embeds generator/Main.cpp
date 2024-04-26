@@ -10,4 +10,7 @@ int main() {
 
 	std::string jsonCode = generateDiscordEmbed(title, color, exampleFields);
 	std::cout << jsonCode;
+
+	exampleFields.clear(); // Free memory
+	return 0;
 }
